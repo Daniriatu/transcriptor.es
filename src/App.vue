@@ -4,10 +4,7 @@ import UploadPanel from "./views/UploadPanel.vue";
 </script>
 
 <template>
-  <div>
-    <!-- <LogIn class="login" /> -->
-    <UploadPanel />
-  </div>
+  <router-view></router-view>
 </template>
 
 <style scoped></style>

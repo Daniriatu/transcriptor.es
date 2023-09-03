@@ -8,7 +8,9 @@
       <p class="slogan">¡Nadie te escucha como nosotros!</p>
       <input class="username" type="text" placeholder="username" />
       <input class="password" type="password" placeholder="password" />
-      <button class="iniciar-sesion">Iniciar sesión</button>
+      <RouterLink class="iniciar-sesion" to="/upload">
+        Iniciar sesión</RouterLink
+      >
       <p class="ayuda">
         ¿No puedes iniciar tu sesión? Click <u>aquí</u> para obtener ayuda.
       </p>
@@ -86,6 +88,9 @@
   background-color: rgb(0, 154, 223);
   font-size: 12pt;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   border: none;
   box-shadow: 1px 2px 7px 2px rgba(0, 0, 0, 25%);
