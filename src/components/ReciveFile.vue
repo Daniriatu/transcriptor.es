@@ -59,7 +59,7 @@ const submit = async () => {
   // );
 
   try {
-    let res = await axios.post("/sender1", formData);
+    let res = await axios.post("/sender", formData);
     console.log("first");
     console.log(res);
   } catch (err) {
