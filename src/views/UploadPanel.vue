@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <img class="background" src="/Fondo.svg" alt="" />
-    <Column class="column" />
+    <!-- <Column class="column" /> -->
     <div class="recieve-box">
       <img class="logo" src="/logo.svg" alt="logo" />
       <RecieveFile class="recieve-file" />
@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import Column from "../components/Column.vue";
+// import Column from "../components/Column.vue";
 import RecieveFile from "../components/ReciveFile.vue";
 </script>
 
@@ -19,7 +19,7 @@ import RecieveFile from "../components/ReciveFile.vue";
   display: flex;
   width: 100%;
   height: 100vh;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 .background {
@@ -29,9 +29,9 @@ import RecieveFile from "../components/ReciveFile.vue";
   object-fit: cover;
   z-index: 0;
 }
-.column {
+/* .column {
   z-index: 1;
-}
+} */
 .recieve-box {
   /* position: relative; */
   width: 83vw;
