@@ -90,11 +90,17 @@ const submit = async () => {
 
   try {
     let res = await axios.post("/sender", formData);
+    if (res.data.code >= 200 && res.data.code <300) {
+      text.value = "¡Archivo recibido!"
+    }
     console.log("first");
     console.log(res);
     console.log(_file);
     console.log(email);
   } catch (err) {
+    if (err){
+      text.value = "Oh... ha surgido un error inprevisto."
+    }
     console.log("err");
     console.log(err);
     console.log(_file);
