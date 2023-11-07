@@ -90,7 +90,7 @@ const submit = async () => {
 
   try {
     let res = await axios.post("/sender", formData);
-    if (res.data.code >= 200 && res.data.code <300) {
+    if (res.status >= 200 && res.status <300) {
       text.value = "¡Archivo recibido!"
     }
     console.log("first");
